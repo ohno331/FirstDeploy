@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html jang="ja">
+<html lang="ja">
   <body>
     <h1>Deploy Success!!</h1>
-    <?php phpinfo() ?>
+    <?php phpinfo(); ?>
   </body>
 </html>
