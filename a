@@ -1,0 +1,22 @@
+$dbh=null;
+
+while(true)
+{
+	$wishlist=$stmt->fetch(PDO::FETCH_ASSOC);
+	if($wishlist==false)
+	{
+		break;
+	}
+    print '<table  border="1" class="fh">';
+    
+    print "<tr><th>番号</th><td>{$wishlist['cart_id']}</td><tr>";
+    print "<tr><th>ユーザー</th><td>{$wishlist['user_id']}</td><tr>";
+    print "<tr><th>商品</th><td>{$wishlist['user_id']}</td><tr>";
+    print '</table>';
+
+	print '<br />';
+ }
+}
+catch (Exception $ex) {
+    print 'もう一度やり直してください';
+}

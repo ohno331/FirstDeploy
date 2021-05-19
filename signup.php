@@ -13,7 +13,6 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  
 
   <!-- Owl-carousel CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
@@ -58,17 +57,43 @@
 
   </header>
   <!-- start #header -->
-
-  
-  <!-- start #nav-L -->
   <?php require 'nav-L.php' ?>
+  <!-- start #main-site -->
   
-  <!-- start #nav-L -->
+    <div class="signup-form">
+      <form action="signup_check.php" method="post">
+        <h2>アカウント登録</h2>
+        <div class="form-group">
+            <input type="text" class="form-control" name="name" placeholder="フルネーム"required="required">
+        </div>
+        <div class="form-group">
+          <input type="email" class="form-control" name="email" placeholder="Email" required="required">
+        </div>
+        <div class="form-group">
+          <input type="password" class="form-control" name="password" placeholder="パスワード" required="required">
+        </div>
+        <!-- <div class="form-group">
+          <input type="password" class="form-control" name="re_password" placeholder="パスワード(再入力)" required="required">
+        </div> -->
+        <div class="form-group">
+          <label class="checkbox-inline"><input type="checkbox" required="required"><a href="#">利用規約
+              </a>に同意する</label>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-info btn-lg btn-block">登録する</button>
+        </div>
+      </form>
+      <div class="text-center">Already have an account? <a href="login_input.php" style="color:aqua;">Sign in</a></div>
+    </div>
+
+
+
+
+
+
+    <!-- Top Sale -->
 
   
-  <!-- start #main-site -->
-  <?php require 'main.php'; ?>
- 
   <!-- start #main-site -->
 
   <!-- start #footer -->
@@ -100,11 +125,7 @@
 
   <!-- Custo, javaScript -->
   <script src="./index.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-K09cMhJkkwNoZK1BRIJX6fQk06LqHSs8LdWAE24M/18F4NlePaltFx1cnB9wKwQX" crossorigin="anonymous"></script>
+
   <!-- Ajax jquery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
